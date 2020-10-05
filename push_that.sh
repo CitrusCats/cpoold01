@@ -1,8 +1,8 @@
 #!/bin/bash
 
-message="no message"
+message="$*"
 if [ -z "$*" ]; then
-	message = "$*"
+	message="no message"
 fi
 
 git add --all
